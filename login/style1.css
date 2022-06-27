@@ -90,16 +90,10 @@ form h1
 }
 .login
 {
-    display:block;
     background-color: #04aa6d;
     text-align: center;
     padding: 15px;
-    line-height: 1.17;
-    margin: 0;
-    position: relative;
-    text-align: center;
-    text-decoration: none;
-    white-space: nowrap;
+    width: 100%;
     border: 0;
     border-radius: 25px;
     color: #fff;

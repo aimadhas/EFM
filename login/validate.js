@@ -28,21 +28,19 @@ pass.addEventListener("keyup", function(){
 })
 // validation
 function validat(){
-    if((pass.value.length == 0) || (pass.value.length < 6)){
-        let exlama = document.getElementById("eexlama")
-        pass.style.border="1px solid red"
-        exlama.style.display="block"
-        return false
-    }
     let regExp = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
     if(!email.value.match(regExp)){
         let exlama = document.getElementById("exlama")
         email.style.border="1px solid red"
         exlama.style.display="block"
+        alert("erure enter email")
         return false
     }
-    else
-    {
-        alert("wellcom")
+    if((pass.value.length == 0) || (pass.value.length < 6)){
+        let exlama = document.getElementById("eexlama")
+        pass.style.border="1px solid red"
+        exlama.style.display="block"
+        alert("erure password")
+        return false
     }
 }
